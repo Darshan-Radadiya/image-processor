@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../static/app.css">
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr> <label class="file-upload-label"> Upload Image Here. </label> </tr>
+            <tr>
+                 <form id="upload-image" action="/upload" method="POST" enctype="multipart/form-data">
+                    <input id="file-picker" class="image-upload" type="file" name="file" accept="image/*"
+                        onchange="this.form.submit()">
+                </form>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

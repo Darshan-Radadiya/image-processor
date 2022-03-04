@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../static/app.css">
+</head>
+<body>
+    <div>
+        <form method="GET" action="/download"></form>
+        <table>
+            <tr> <td><label class="file-upload-label">Image transformation applied Successfully. :) </label> 
+                    <a href="{{ url_for('.download_file') }}"><button class="btn">Download Image</button></a></td>
+            </tr>
+            <tr> <td><img src="{{ url_for('.download_file') }}" alt="img" class="dwn-img"></td></tr>
+        </table>
+    </div>
+</body>
+</html>

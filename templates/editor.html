@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/app.css">
+    </head>
+    <body>
+        <div>
+            <table>
+                <form method="POST" action="/image_operations">
+                    <tr><td><h3>Flip horizontal </h3></td><td><input type="checkbox" name="flip_horizontal" value="flip_horizontal"></td></tr>
+                    <tr><td><h3>Flip  vertical</h3></td><td><input type="checkbox" name="flip_vertical" value="flip_vertical"></td></tr>
+                    <tr><td><h3>Convert to grayscale</h3></td><td><input type="checkbox" name="grayscale" value="grayscale"></td></tr>
+                    <tr><td><h3>Generate a thumbnail</h3></td><td><input type="checkbox" name="thumbnail" value="thumbnail"></td></tr>
+                    <tr><td><h3>Rotate left</h3></td><td><input type="checkbox" name="rotate_left" value="rotate_left"></td></tr>
+                    <tr><td><h3>Rotate right</h3></td><td><input type="checkbox" name="rotate_right" value="rotate_right"></td></tr>
+                    <tr><td><h3>Resize Height and Width</h3></td><td><input type="number" name="resize_height" value="resize_height" min="10" placeholder="enter greater than 10" > 
+                                                                     <input type="number" name="resize_width" value="resize_width" min="10" placeholder="enter greater than 10" >
+                                                                    </td></tr>
+                    <tr><td><h3>Rotate +/- n degrees</h3></td><td><input type="number" name="rotate_degree" value="rotate_degree" ></td></tr>
+                    <tr><td><input class="btn" type="submit"></td></tr>
+                </form>
+            </table>
+        </div>
+    </body>
+</html>
